@@ -1,0 +1,34 @@
+Berikut jawaban detail untuk friendshipuserbot:
+
+1. Apakah support broadcast gambar dengan teks (caption)?
+Ya, friendshipuserbot support broadcast gambar dengan caption.
+
+Jika kamu reply gambar (photo/media) dengan caption, maka gambar beserta caption akan di-broadcast ke semua grup.
+Jika kamu hanya mengetik command + teks, maka hanya teks yang dikirim.
+2. Bagaimana command-nya?
+Untuk broadcast teks:
+/gcast isi pesan broadcast
+atau
+.gcast isi pesan broadcast
+Untuk broadcast gambar+caption:
+Reply gambar dengan command /gcast caption kamu di sini
+atau
+.gcast caption kamu di sini
+3. Di mana menggunakannya?
+Jalankan command di private chat dengan userbot (bukan di grup).
+Bisa juga di chat ke asisten bot (jika asisten sudah diatur sebagai sudo user).
+4. Apakah bisa chat ke asisten bot?
+Bisa, asalkan asisten bot sudah masuk ke daftar sudo user (admin userbot).
+Command tetap sama, kirim ke asisten bot via private chat.
+5. Bagaimana menambahkan list grupnya?
+Userbot akan otomatis mengambil semua grup yang userbot join.
+Untuk blacklist grup tertentu agar tidak kena broadcast:
+/addbl (dikirim di grup yang ingin di-blacklist)
+/delbl (untuk menghapus dari blacklist)
+/listbl (melihat daftar blacklist)
+
+
+
+.\venv\Scripts\activate
+pip install -r requirements.txt
+python -m ubot
