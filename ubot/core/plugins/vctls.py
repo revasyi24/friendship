@@ -9,7 +9,7 @@ from pyrogram.raw.functions.messages import GetFullChat
 from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
-from pytgcalls.exceptions import AlreadyJoinedError
+from pytgcalls.errors import AlreadyJoinedError
 from pytgcalls.types.input_stream import InputAudioStream, InputStream
 
 from ubot import *
